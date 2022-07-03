@@ -1,8 +1,18 @@
+import React from 'react';
+import UserInput from './component/User/UserInput';
+
+import './App.css';
+
 function App() {
   return (
-    <div>
-      <h2>Let's get started!</h2>
-    </div>
+    <>
+      <section>
+        <UserInput />
+      </section>
+      <section>
+
+      </section>
+    </>
   );
 }
 
