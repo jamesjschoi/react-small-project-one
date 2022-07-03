@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import UserInput from './component/User/UserInput';
 import List from './component/List/List';
-import './App.css';
+import styles from './App.module.css';
 
 function App() {
   const [user, setUser] = useState([]);
@@ -14,11 +14,9 @@ function App() {
     });
   };
 
-  console.log(user);
-
   return (
     <>
-      <section>
+      <section className={styles.section}>
         <UserInput addUser={addUserHandler} />
       </section>
       <section>

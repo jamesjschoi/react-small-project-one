@@ -3,7 +3,7 @@ import styles from './List.module.css';
 
 function List(props) {
     return (
-        <div>
+        <div className={styles['list-container']}>
             <ul className={styles['user-list']}>
                 {props.userList.map((user) => {
                     return <li className={styles['user-item']} key={user.id}>{user.name} ({user.age} years old)</li>;
